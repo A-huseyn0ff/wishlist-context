@@ -1,0 +1,67 @@
+#root{
+    display: flex;
+  
+    justify-content: space-around;
+    .Cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 75%;
+        gap: 30px;
+        .card{
+    width: 280px;
+    .image{
+        display: flex;
+    //    align-items: center;
+        justify-content: center;
+        .btn{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 3rem;
+            height: 3rem;
+            padding: 0;
+            font-size: 1.4rem;
+            line-height: 1;
+            transition: all .35s ease;
+   background-color: transparent;
+   color: transparent;
+            border-radius: 50%;
+            
+          
+            right: 60px;
+            top: 15px;
+            transition: all .35s ease;
+    transform: translateX(-15px);
+            svg{
+                width: 50px;
+            }
+        }
+        .btn:hover{
+            background-color: #c96 !important;  
+            color: white !important;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+   
+    .image:hover{
+.btn{
+    background-color: #fff;
+    transform: translateX(0px);
+    color: #c96;
+}
+    }
+    .txt{
+      
+        text-align: center;
+    }
+        }
+        
+    }
+    .wishlist{
+        max-width: 25%;
+    }
+}
